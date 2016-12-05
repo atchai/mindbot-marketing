@@ -1,0 +1,398 @@
+body {
+	background-color: white;
+	text-align: center;
+	line-height: 1.15em;
+	width: 100vw;
+	overflow-x: hidden;
+	font-family: 'Yantramanav', sans-serif;
+	letter-spacing: 0;
+}
+
+.bg-gradient {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,bfccd4+100 */
+	background: #ffffff; /* Old browsers */ /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#bfccd4 100%); /* Chrome10-25,Safari5.1-6 */
+	background: -webkit-radial-gradient(center, ellipse, #ffffff 0%, #bfccd4 100%);
+	background: radial-gradient(ellipse at center,  #ffffff 0%,#bfccd4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bfccd4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	z-index: -1;
+/*	background-image: url(http://smhos.org/wp-content/uploads/2014/10/Silver-Blur-Background-Wallpaper.jpg);
+	background-size: cover;*/
+}
+
+.title {
+	font-size: 2em;
+	font-weight: 800;
+}
+
+p {
+    max-width: 45em;
+    line-height: 1.6em;
+    margin: 1em 10% 0;
+    text-align: left;
+    font-size: 1.15em;
+    font-weight: 300;
+}
+
+h2 {
+	width: 80%;
+	margin: 0 10%;
+	max-width: 1200px;
+	text-align: left;
+	font-weight: 300;
+    letter-spacing: 0.01em;
+}
+
+.about-us h2 {
+    color: black;
+    font-weight: 800;
+    font-size: 5em;
+    line-height: .75em;
+    letter-spacing: 0.025em;
+}
+
+h5 {
+    margin: 0.5em 0;
+    font-weight: 400;
+    letter-spacing: 0.175em;
+    font-size: 1.25em;
+}
+
+.nav-bar {
+	display: none;
+	position: relative;
+	height: 4em;
+}
+
+nav {
+	display: block;
+	padding: 1em 0;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.25em;
+    -webkit-transition: .5s;
+            transition: .5s;
+}
+
+nav a:hover {
+	color: black;
+}
+
+nav li {
+	list-style: none;
+	cursor: pointer;
+}
+
+.navIcon {
+	height: 3.5em;
+	top: 0.5em;
+	position: absolute;
+	left: 0;
+}
+
+.mobile-menu-button {
+	border: none;
+	position: absolute;
+	color: white;
+	right: 0;
+	top: 0.5em;
+	height: 2em;
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0 0.5em;
+	line-height: 2em;
+	cursor: pointer;
+}
+
+.mobile-menu-button:hover {
+	border: none;
+	position: absolute;
+	color: black;
+}	
+
+.hero {
+	margin: 3em auto;
+}
+
+.flowbot {
+    display: none;
+    width: 18em;
+    top: 0;
+    margin: 10% 5%;
+}
+
+.phone-body {
+    position: relative;
+    width: 20em;
+    height: 41em;
+    margin: 0 5%;
+    z-index: 500;
+    display: inline-block;
+}
+
+.phone-body img {
+    width: 100%;
+    margin-top: -2px;
+}
+
+.screen-mask, .screen-block {
+	position: absolute;
+    height: 31.1em;
+    width: 17.2em;
+    top: 4.65em;
+    left: 1.45em;
+    overflow: hidden;
+    z-index: 1;
+    background-image: url(../assets/screen-block.png);
+    background-size: cover;
+    background-position-x: -3px;
+}
+
+.phone-screen {
+    position: absolute;
+    background-color: white;
+    width: 17.25em;
+    min-height: 31em;
+    padding: 3em 0 5em;
+    top: 0;
+    left: 0;
+    z-index: -17 !important;
+    -webkit-transition: .5s ease-out;
+            transition: .5s ease-out;
+    -webkit-transition-delay: .25s;
+            transition-delay: .25s;
+
+}
+
+.message-bubble {
+	position: relative;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    padding: .5em;
+    padding-left: 0.75em;
+    background-color: #1b91fd;
+    text-align: left;
+    border-radius: 1.25em;
+    float: right;
+    -webkit-transition: .25s;
+            transition: .25s;
+    max-width: 12em;
+    margin: 1em .25em;
+    height: auto;
+}
+
+.gray-message-bubble {
+	position: relative;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    padding: 0.5em;
+    padding-left: 0.75em;
+    background-color: #f2f2f2;
+    border-radius: 1.25em;
+    left: .25em;
+    text-align: left;
+    -webkit-transition: .25s;
+            transition: .25s;
+    max-width: 12em;
+    margin-top: .5em;
+    clear: both;     
+}
+
+.message-text {
+  font-size: .8em;
+  font-family: "Helvetica Neue";
+  color: rgb(255, 255, 255);
+  z-index: 3004;
+  line-height: 0 !important;
+}
+
+.gray-message-bubble .message-text {
+	color: rgba(0,0,0,.9);
+}
+
+.about-us, .get-started, .contact {
+	background-color: white;
+	width: 100vw;
+	color: rgba(44,63,83,.6);
+	padding: 4em 0 7em;
+}
+
+.get-started {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bfccd4+0,2a4052+100 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fab700+0,e5a400+100 */
+background: #fab700; /* Old browsers */ /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #fab700 0%,#e5a400 100%); /* Chrome10-25,Safari5.1-6 */
+background: -webkit-linear-gradient(top, #fab700 0%, #e5a400 100%);
+background: linear-gradient(to bottom,  #fab700 0%,#e5a400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fab700', endColorstr='#e5a400',GradientType=0 ); /* IE6-9 */
+color: white;
+}
+
+.contact {
+	color: white;
+	background: #ffffff; /* Old browsers */ /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover,  #bfccd4 0%,#bfccd4 100%); /* Chrome10-25,Safari5.1-6 */
+	background: -webkit-radial-gradient(center, ellipse, #bfccd4 0%, #bfccd4 100%);
+	background: radial-gradient(ellipse at center,  #bfccd4 0%,#bfccd4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfccd4', endColorstr='#bfccd4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */	
+}
+
+.icons {
+	margin: 0 auto 0;
+	max-width: 1100px;
+}
+
+.icon {
+    cursor: pointer;
+	margin: 1em auto 3.5em;
+	width: 32%;
+	display: inline-block;
+}
+
+.icon h5 {
+	cursor: pointer;
+}
+
+.icon img {
+	height: 10em;
+	width: 10em;
+	margin: 1em auto 0;
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3));
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="5" /><feOffset dx="6" dy="6" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.3)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3));
+            filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3)); 
+}
+
+.email-field, .text-field, .submit-button {
+	margin: 1em 10% !important;
+	width: 80%;
+}
+
+.button, button, input[type=button], input[type=reset], input[type=submit] {    
+	display: inline-block;
+    height: 38px;
+    padding: 0px 10px;
+    color: #e2303c;
+    text-align: right;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 1px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 0!important;
+    -webkit-transition: .5s;
+            transition: .5s;
+}
+
+input[type=submit]:hover {
+	color: black;
+}
+
+input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], textarea {
+	color: #294053;
+}
+
+#contact-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.66);
+    z-index: 1000;
+    display: none;
+}
+
+#contact-popup {
+    position: relative;
+    background-color: rgba(255,255,255,.95);
+    width: 90%;
+    max-width: 40em;
+    height: auto;
+    margin: 5em auto;
+}
+
+#contact-popup #close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+#contact-popup h3 {
+    position: relative;
+    padding: 2.5em 1.5em 0;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    letter-spacing: 0.0125em;
+}
+
+#welcome-container {
+    margin: 10em auto;
+    width: 75%; 
+}
+
+#welcome-container h3 {
+    color: black;
+    letter-spacing: 0.01em;
+    font-weight: 700;
+}
+
+#welcome-container a {
+    color: #e2303c;
+    text-decoration: none;
+    font-size: 1.25em;
+    -webkit-transition: .5s;
+            transition: .5s;
+}
+
+#welcome-container a:hover {
+    color: black;
+}
+
+#welcome-container h5 {
+    margin: 0.5em 0 1.5em;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    color: black;
+    font-size: 1.25em;
+}
+
+@media (max-width: 700px) {
+	.icon {
+		width: 100%;
+	}
+}
+
+@media (max-width: 550px) {
+	nav {
+		display: none;
+		text-align: right;
+	}
+
+	.nav-items {
+		padding: 0.5em;
+	}
+
+	.nav-bar {
+		display: block;
+	}
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>mindBot</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Yantramanav:400,300,700,900,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Start of Async HubSpot Analytics Code -->
+      <script type="text/javascript">
+        (function(d,s,i,r) {
+          if (d.getElementById(i)){return;}
+          var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+          n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/2153252.js';
+          e.parentNode.insertBefore(n, e);
+        })(document,"script","hs-analytics",300000);
+      </script>
+    <!-- End of Async HubSpot Analytics Code -->
+</head>
+<body>
+    <div class="bg-gradient"></div>
+    <div class="container">
+        <div class="nav-bar">
+            <img src="./assets/navIcon.png" class="navIcon">
+            <div class="mobile-menu-button">menu</div>            
+        </div>
+        <nav class="row">
+            <!-- <li class="one-third column nav-items">mindBot</a></li> -->
+            <li class="one-third column nav-items"><a href="#start">Get Started</a></li>
+            <li class="one-third column nav-items title"><a href="#about">mindBot</a></li>
+            <li class="one-third column nav-items"><a href="#contact">Contact</a></li> 
+        </nav>
+        <div class="row hero">
+            <img class="flowbot" src="./assets/flowbot.png">
+            <div class="phone-body">
+                <img src="./assets/phone.png">
+                <div class="screen-mask">
+                    <div class="phone-screen"></div>
+                </div>
+                <div class="screen-block"></div>
+            </div>
+        </div>
+    </div>    
+    <div class="about-us" id="about">
+        <div class="container">
+            <h2>mindBot</h2>
+            <p>
+                Life is busy and getting busier. Sometimes technology is the problem causing all kinds of distractions but it can also be your friend. mindBot is a chatbot that uses introspective questioning and AI to help you organize your mind and concentrate on doing what matters most to you. Our mission is to help you understand your thought patterns and how you can make sure you are not led astray by them but use them rather to lead to positive behaviors to live an optimised life, helping you manage your intentions and be accountable for the goals you have set yourself.
+            </p>
+        </div>
+    </div>
+    <div class="get-started" id="start">
+        <div class="container">
+            <h2>Get Started</h2>
+            <div class="row icons">
+                <div class="icon" value="Telegram">
+                    <img src="assets/send-icon.png">
+                    <h5>TELEGRAM</h5>
+                </div>
+                <div class="icon" value="Slack">
+                    <img src="assets/slack-icon.png">
+                    <h5>SLACK</h5>
+                </div>
+                <div class="icon" value="Messenger">
+                    <img src="assets/messenger-icon.png">
+                    <h5>MESSENGER</h5>
+                </div>            
+            </div>
+        </div>            
+    </div>
+    <div class="contact" id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form class="row" action="https://formspree.io/niels.bischoff@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="/welcome.html" />
+                <input type="hidden" name="_subject" value="mindBot Contact" />
+                <input type="text" name="_replyto" class="email-field column" placeholder="email"  required>
+                <textarea class="text-field column" placeholder="message" name="message"></textarea>
+                <input class="submit-button column" type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+    <div id="contact-popup-container">
+        <div id="contact-popup">
+            <h3>Submit your email to get notified when we launch</h3>
+            <div id="close">close x</div>
+            <form id="popup-form" class="row" action="https://formspree.io/niels.bischoff@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="/welcome.html" />
+                <input type="hidden" name="message" value="Add me! mindBot Email List" />
+                <input id="subject-line" type="hidden" name="_subject" value="mindBot Email List" />
+                <input type="text" name="_replyto" class="email-field column" placeholder="email"  required>
+                <input class="submit-button column" type="submit" value="Send">
+            </form>
+        </div>
+    </div>  
+<script type="text/javascript" src="main.js"></script>  
+</body>
+</html>
