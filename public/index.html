@@ -32,7 +32,7 @@
         </div>
         <nav class="row">
             <!-- <li class="one-third column nav-items">mindBot</a></li> -->
-            <li class="one-third column nav-items"><a href="#start">Get Started</a></li>
+            <li class="one-third column nav-items"><a href="https://www.messenger.com/t/1723939907886378">Get Started</a></li>
             <li class="one-third column nav-items title"><a href="#about">mindBot</a></li>
             <li class="one-third column nav-items"><a href="#contact">Contact</a></li> 
         </nav>
@@ -53,30 +53,30 @@
             <p>
                 Life is busy and getting busier. Sometimes technology is the problem causing all kinds of distractions but it can also be your friend. mindBot is a chatbot that uses introspective questioning and AI to help you organize your mind and concentrate on doing what matters most to you. Our mission is to help you understand your thought patterns and how you can make sure you are not led astray by them but use them rather to lead to positive behaviors to live an optimised life, helping you manage your intentions and be accountable for the goals you have set yourself.
             </p>
+            
+            <br><br><br><br>
+            
+            <div class="fb-messengermessageus" 
+              messenger_app_id="1747596242166917" 
+              page_id="1723939907886378"
+              color="blue"
+              size="xlarge" >
+            </div>
         </div>
     </div>
-    <div class="get-started" id="start">
+<!--
+        <div class="get-started" id="start">
         <div class="container">
-            <h2>Get Started</h2>
-            <div class="row icons">
-                <div class="icon" value="Telegram">
-                    <img src="assets/send-icon.png">
-                    <h5>TELEGRAM</h5>
-                </div>
-                <div class="icon" value="Slack">
-                    <img src="assets/slack-icon.png">
-                    <h5>SLACK</h5>
-                </div>
-                <div class="icon" value="Messenger">
-                    <img src="assets/messenger-icon.png">
-                    <h5>MESSENGER</h5>
-                </div>            
-            </div>
+            <h2 style="text-align:centre">Get Started</h2>
+          
+            
         </div>            
     </div>
+-->
     <div class="contact" id="contact">
         <div class="container">
-            <h2>Contact</h2>
+            <h2>Contact us at <a href="mailto:hello@mind-bot.com">hello@mind-bot.com</a></h2>
+            <!--
             <form class="row" action="https://formspree.io/niels.bischoff@gmail.com" method="POST">
                 <input type="hidden" name="_next" value="/welcome.html" />
                 <input type="hidden" name="_subject" value="mindBot Contact" />
@@ -84,21 +84,30 @@
                 <textarea class="text-field column" placeholder="message" name="message"></textarea>
                 <input class="submit-button column" type="submit" value="Send">
             </form>
+            -->
         </div>
     </div>
-    <div id="contact-popup-container">
-        <div id="contact-popup">
-            <h3>Submit your email to get notified when we launch</h3>
-            <div id="close">close x</div>
-            <form id="popup-form" class="row" action="https://formspree.io/niels.bischoff@gmail.com" method="POST">
-                <input type="hidden" name="_next" value="/welcome.html" />
-                <input type="hidden" name="message" value="Add me! mindBot Email List" />
-                <input id="subject-line" type="hidden" name="_subject" value="mindBot Email List" />
-                <input type="text" name="_replyto" class="email-field column" placeholder="email"  required>
-                <input class="submit-button column" type="submit" value="Send">
-            </form>
-        </div>
-    </div>  
-<script type="text/javascript" src="main.js"></script>  
+
+<script type="text/javascript" src="main.js"></script> 
+  <script>
+
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId: "1747596242166917",
+        xfbml: true,
+        version: "v2.6"
+      });
+
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) { return; }
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+  </script> 
 </body>
 </html>
